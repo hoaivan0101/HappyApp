@@ -1,0 +1,38 @@
+.header{
+    min-height: 100px;
+    background-image: linear-gradient(rgb(21 123 225), rgb(0 151 221));
+    justify-content:space-between;
+    padding: 20px;
+}
+
+.footer{
+    background-image: linear-gradient(rgb(21 123 225), rgb(0 151 221));
+    justify-content:space-between;
+    color: white;
+    font-size: 1.5rem;
+    padding: 20px;
+    height: 60px!important;
+    text-align: center;
+    position: fixed;
+    bottom:0;
+    left: 0;
+    right: 0;
+}
+
+    .footer div{
+        margin: 0 auto;
+    }
+
+@media screen and (max-width:600px) {
+    .header{
+        height: 120px;
+        padding-top: 0;
+        padding-bottom:35px;
+        justify-content: center;
+    }
+
+    .footer{
+        height: 50px!important;
+        /* position: static!important; */
+    }
+}

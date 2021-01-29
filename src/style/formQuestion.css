@@ -1,0 +1,74 @@
+.questionlist{
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    height: 30%;
+
+}
+
+    .formQuestion{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+        .formQuestion label{
+            width: 30%;
+        }
+
+        .formQuestion input,.formQuestion select{
+            width: 50%;
+            font-size: 1.5rem;
+            border-radius: 5px;
+        }
+
+    .questionlist .questionlistbtn{
+        width: 100%;
+        display:flex;
+        justify-content:center;
+    }
+        .questionlist .questionlistbtn button:nth-child(1){
+            margin-right: 10px;
+        }
+
+        .questionlist .questionlistbtn button,.addBtn button{
+            width: 70px;
+            height: 30px;
+            font-size: 1.3rem;
+        }
+
+    .addBtn{
+        padding-left: 10px;
+    }
+@media (max-width: 600px){
+    .formQuestion{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .questionlist{
+        display: block;
+        margin: 18px 18px;
+        font-size: 1.3rem;
+    }
+
+        .questionlistbtn{
+            width: 80%!important;
+            margin: 0 auto;
+            justify-content:flex-end!important;
+        }
+
+    .addBtn{
+        margin-top: -30px;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width:380px) {
+    input,select{
+        height: 25px!important;
+        font-size: 1.3rem!important;
+    }
+}

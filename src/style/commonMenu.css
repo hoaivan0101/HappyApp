@@ -1,0 +1,48 @@
+.menu{
+    height: 100%;
+    width: 30%;
+    max-width: 150px;
+    border-right: 1px solid rgba(97, 97, 97, 0.212);
+}
+
+    .menu ul{
+        align-items: center;
+    }
+        .menu ul li{
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            height: 80px;
+            width: 80%;
+            margin: 20px 0;
+            /* border: 1px solid rgba(0,0,0,.125); */
+            border-radius:10px;
+            /* box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px; */
+
+        }
+
+        .menu ul li:hover{
+            box-shadow: 0 10px 10px 0 hsla(0, 0%, 64.3%, 0.5);
+            transform: scale(1.03);
+            transition: 0.5s;
+            z-index:10;
+        }
+
+            .menu ul li a{ 
+                font-size: 1.6rem;
+                font-weight: bold;
+                text-align: center;
+            }
+
+@media screen and (max-width:600px) {
+    .menu{
+        display: none;
+    }
+
+    .submitBtn{
+        display: block;
+        margin: 0 auto;
+        width: 150px!important;
+        border-radius: 30px!important;
+    }
+}

@@ -1,0 +1,145 @@
+.questionTable{
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    font-size:1.5rem;
+    height: 68%;
+    position: relative;
+    background:white;
+}
+
+    .table-bordered{
+        border: none;
+    }
+
+    .table__noresult{
+        position: absolute;
+        top: 20%;
+        left: 40%;
+    }
+
+    .table-list{
+        overflow:scroll;
+        height: 90%;
+        border: 1px solid #dee2e6;;
+    }
+    table{
+        /* display:block; */
+        height: 90%;
+        min-width: 600px;
+        width: 100%;
+        position: relative;
+    }
+
+        table a{
+            color: black;
+        }
+
+        table a:hover{
+            text-decoration: none;
+            color: black;
+        }
+
+        th.tableName{ z-index: 9;}
+        .tableName{
+           
+            position: sticky;
+            left: 0;
+            background:white;
+        }
+
+        .tableTop{
+            margin-top: 2px;
+            position: sticky!important;
+            top: 0;
+        }
+        th{
+            background:#007bff!important;
+            color: white;
+            font-weight: normal;
+        }
+
+        td,th{
+            vertical-align:middle!important;
+            word-break: break-all;
+        }
+
+        td:nth-child(1){
+            width: 30%;
+        }
+
+        td:nth-child(2){
+            width: 10%;
+        }
+
+        td:nth-child(3){
+            width: 20%;
+        }
+
+        td:nth-child(4){
+            width: 20%;
+        }
+
+        td:nth-child(5){
+            width: 10%;
+        }
+
+        td:nth-child(6){
+            width: 10%;
+        }
+            .sort{
+                position: relative;
+            }
+
+                .sort span{
+                    color: red;
+                    font-size: 0.9rem;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+
+                .sort span:hover{
+                    cursor: pointer;
+                }
+                .sort span:active{
+                    color: rgb(128, 6, 6);
+                }
+                    .sort span img{
+                        height: 13px;
+                    }
+
+.questionNoresult{
+    font-size: 1.5rem;
+    text-align: center;
+    height: 150px;
+    padding-top: 10%;
+}
+
+tbody tr:hover,tbody tr:hover .tableName{
+    background-color:rgb(212, 212, 212);
+    cursor: pointer;
+}
+
+
+
+.my-anchor-css-class{
+    color: rgba(141, 138, 138, 0.356);
+}
+
+
+
+@media (max-width:768px){
+    .table{
+        font-size: 1.3rem;
+    }
+
+    .questionTable{
+        height: 63%;
+    }
+
+    .table__noresult{
+        left: 10%;
+    }
+
+}

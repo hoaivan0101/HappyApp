@@ -1,0 +1,34 @@
+.paginationList{
+    display: flex;
+    justify-content:space-between;
+}
+
+    .showPage div{
+        display: flex;
+    }
+
+        .showPage div p{
+            margin: 0 5px;
+            color: rgba(131, 131, 131, 0.582);
+        }
+
+        .showPage div p:hover{
+            cursor: pointer;
+            color: black;
+        }
+    .active{
+        color: black!important;
+        font-weight: bold;
+    }
+
+.container-fluid{
+    padding-right: 0!important;
+    padding-left: 0!important;
+}
+
+@media (max-width: 768px){
+    .paginationList{
+        display: block;
+    }
+}
+

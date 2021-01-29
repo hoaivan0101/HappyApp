@@ -1,0 +1,27 @@
+.account{
+    height: 20px;
+    font-size: 1.8rem;
+    justify-content:flex-end;
+    color: white;
+}
+
+    .account a{
+        margin-right: 5px;
+    }
+
+    .account img{
+        width: 40px;
+    }
+
+    .account :hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    @media (max-width:600px){
+        .account{
+            display: flex;
+            width: 150px;
+            height: 50px;
+        }
+    }

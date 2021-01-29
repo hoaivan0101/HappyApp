@@ -1,0 +1,95 @@
+.form{
+    width: 100%;
+    font-size: 2rem;
+    background-color:rgba(128, 128, 128, 0.233);
+    flex-direction: column;
+    align-items: center;
+}
+
+    .form .accountIcon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .form .accountIcon img{
+        height: 100px;
+    }
+
+    .form .accountIcon h1{
+        margin: 10px 0 20px 0;
+    }
+
+    .form form{
+        width: 50%;
+        padding-bottom: 20%;
+        background: white;
+        padding: 15px 15px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
+    }
+
+        .form form input{
+            font-size: 1.8rem;
+            height: 45px;
+            border-radius: 10px;
+            margin: 0 0 15px 0;
+        }
+
+        .ErrorMessage{
+            text-align: right;
+            color: red;
+            font-size:1.5rem;
+            margin-top: -10px;
+        }
+
+
+        .submitBtn{
+            font-size: 2.2rem;
+            font-weight: bold;
+            border-radius:10px;
+            border: none;
+            background: #168eff;
+            width: 100%;
+            height: 50px;
+        }
+
+            .submitBtn:hover{
+                background: #168eff;
+                box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15)!important;
+            }
+            .submitBtn:active, .submitBtn:focus{
+                background: #0685fc!important;
+                box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15)!important;
+            }
+            .submitBtn:focus{
+                background: #1467b6!important;
+            }
+
+@media screen and (max-width:600px) {
+    .form form{
+        width: 80%;
+        box-shadow: none;
+    }
+
+    .form{
+        background:none;
+    }
+
+    .form .accountIcon{
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .form form label{
+        display: none;
+    }
+
+    .form form input{
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid rgba(112, 112, 112, 0.301);
+    }
+
+}
